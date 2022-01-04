@@ -101,7 +101,34 @@ main {
     }
 
     .b-planos {
-        
+     
+        &-cards {
+            text-align: center;
+            @include flexbox();
+            h1 {
+                font-size: 24px;
+                font-family: 'Sora';
+                font-weight: 600;
+            }
+            p {
+                font-size: 18px;
+                font-family: 'Inter';
+                font-weight: 400;
+            }
+
+            button {
+                @include button();
+                padding: 8px 80px;
+            }
+
+            &-card {
+                &:nth-child(odd) {
+                    @include card($white400);
+                }
+              
+
+            }
+        }
     }
   }
 }

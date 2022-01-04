@@ -49,3 +49,14 @@ font-size: 20px;
   color: #0F9AFE;
 }
 }
+
+@mixin card ($bg) {
+  padding: 56px 35px;
+  width: 370px;
+ border-radius: 8px;
+ background-color: $bg;
+ p {
+   padding: 25px 0;
+ }
+ 
+}
