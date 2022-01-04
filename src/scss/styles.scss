@@ -8,3 +8,14 @@ $white400: #EFF8FF;
 $grey: #6E7275;
 $grey-ligth:#DBDBDB;
 $grey200: #293145;
+
+@mixin maxw {
+ max-width: 1140px;
+ margin: 0 auto;   
+}
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
