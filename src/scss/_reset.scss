@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,30 @@
    border: none;
    cursor: pointer;
  }
- 
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600&display=swap');
+
+$principal: #0F9AFE;
+$white: #FFFFFF;
+$white400: #EFF8FF;
+$grey: #6E7275;
+$grey-ligth:#DBDBDB;
+$grey200: #293145;
+
+@mixin maxw {
+ max-width: 1140px;
+ margin: 0 auto;   
+}
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
