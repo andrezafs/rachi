@@ -4,10 +4,10 @@
 }
 
 .bg-ligth {
-    background-color: $white;
+  background-color: $white;
 }
 .bg-dark {
-    background-color: $white400;
+  background-color: $white400;
 }
 
 nav {
@@ -18,6 +18,28 @@ nav {
     display: flex;
     li {
       margin: 0 33px;
+    }
+  }
+}
+
+main {
+  section {
+    .intro-container {
+      height: 90vh;
+      @include flexbox();
+
+      &-text {
+        h1 {
+          font-size: 48px;
+          font-family: "Sora", sans-serif;
+        }
+
+        button {
+          padding: 16px 36px;
+          margin-top: 50px;
+          @include button();
+        }
+      }
     }
   }
 }

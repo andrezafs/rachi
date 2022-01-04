@@ -37,3 +37,10 @@ $grey200: #293145;
     align-items: center;
     flex-wrap: wrap;
   }
+@mixin button {
+  background: #0F9AFE;
+box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+border-radius: 50px;
+color: $white;
+font-size: 20px;
+}
