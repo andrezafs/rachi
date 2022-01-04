@@ -43,4 +43,8 @@ box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
 border-radius: 50px;
 color: $white;
 font-size: 20px;
+&:hover  {
+  background-color: $white;
+  color: #0F9AFE;
+}
 }
