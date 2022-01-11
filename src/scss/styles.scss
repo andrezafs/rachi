@@ -77,6 +77,7 @@ main {
     .app {
       padding: 117px 0;
       @include flexbox();
+      justify-content: center;
       &-description {
         width: 60%;
         h1 {
@@ -161,30 +162,43 @@ main {
     }
 
     .b-contact {
+      padding: 50px 0;
       text-align: center;
-      h1 {
-        font-family: 'Sora';
-font-weight: 600;
-font-size: 40px;
-      }
-      p  {
-        font-family: 'Roboto';
-font-size: 18px;
 
+      &-email {
+        margin: 83px 0 45px 0;
+      }
+      h1 {
+        font-family: "Sora";
+        font-weight: 600;
+        font-size: 40px;
+      }
+      p {
+        font-family: "Roboto";
+        font-size: 18px;
+        padding: 16px 0;
       }
 
       input {
-       
-border: none;
-border-bottom: 1px solid $white;
-&::placeholder {
-  font-family: 'Inter';
+        background-color: transparent;
+        padding: 8px 32px;
+        color: $white;
+        border: none;
+        border-bottom: 1px solid $white;
+        &::placeholder {
+          font-family: "Inter";
 
-  font-weight: 500;
-  font-size: 18px;
-}
+          font-weight: 500;
+          font-size: 18px;
+        }
       }
-     
     }
   }
+}
+
+#s-contact {
+  color: $white;
+  background-image: url(../images/notebook.svg);
+  background-position: center;
+  background-size: cover;
 }
