@@ -2,9 +2,7 @@
     text-align: center;
     padding: 56px 0;
     h1 {
-      font-size: 40px;
-      font-family: "Sora";
-      font-weight: 600;
+      font: 600 40px 'Sora';
     }
     &-box {
       @include flexbox();
@@ -17,15 +15,11 @@
         flex-direction: column;
         justify-content: space-between;
         h2 {
-          font-family: "Sora";
-          font-weight: 600;
-          font-size: 18px;
+          font: 600 18px 'Sora';
           padding: 16px;
         }
         p {
-          font-size: 16px;
-          font-family: "Inter";
-          font-weight: 400;
+          font: 400 16px 'Inter';
         }
       }
     }

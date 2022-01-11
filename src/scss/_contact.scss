@@ -31,7 +31,6 @@
           margin-right: 40px;
           &::placeholder {
             font-family: "Inter";
-  
             font-weight: 500;
             font-size: 18px;
           }
@@ -41,7 +40,11 @@
   
   #s-contact {
     color: $white;
-    background-image: url(../images/notebook.svg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-image: linear-gradient(
+      rgba(41, 49, 69, 0.7)
+    ),
+    url(../images/notebook.svg)
   }
