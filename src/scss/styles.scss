@@ -159,5 +159,32 @@ main {
         }
       }
     }
+
+    .b-contact {
+      text-align: center;
+      h1 {
+        font-family: 'Sora';
+font-weight: 600;
+font-size: 40px;
+      }
+      p  {
+        font-family: 'Roboto';
+font-size: 18px;
+
+      }
+
+      input {
+       
+border: none;
+border-bottom: 1px solid $white;
+&::placeholder {
+  font-family: 'Inter';
+
+  font-weight: 500;
+  font-size: 18px;
+}
+      }
+     
+    }
   }
 }
