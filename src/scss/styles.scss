@@ -178,13 +178,19 @@ main {
         font-size: 18px;
         padding: 16px 0;
       }
-
-      input {
-        background-color: transparent;
+      .btn-contact {
+        @include button();
+        border: none;
         padding: 8px 32px;
+      }
+      input[type="email"] {
+        background-color: transparent;
+        padding: 10px;
+        width: 300px;
         color: $white;
         border: none;
         border-bottom: 1px solid $white;
+        margin-right: 40px;
         &::placeholder {
           font-family: "Inter";
 
