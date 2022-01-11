@@ -1,0 +1,64 @@
+
+  
+    .b-planos {
+        text-align: center;
+        padding: 50px 0;
+        h1 {
+          font-size: 40px;
+          font-family: "Sora";
+          font-weight: 600;
+        }
+        p {
+          padding: 16px 0;
+          font-size: 18px;
+          font-family: "Inter";
+          font-weight: 400;
+        }
+  
+        &-cards {
+          padding: 80px 0;
+          @include flexbox();
+          h1 {
+            font-size: 24px;
+            font-family: "Sora";
+            font-weight: 600;
+          }
+          p {
+            font-size: 18px;
+            font-family: "Inter";
+            font-weight: 400;
+          }
+  
+          button {
+            @include button();
+            padding: 8px 80px;
+          }
+  
+          &-card {
+            &:nth-child(odd) {
+              @include card($white400);
+            }
+            &:nth-child(2) {
+              @include card($grey200);
+              color: $white;
+            }
+            .valor {
+              position: relative;
+              font-family: "Sora";
+              font-weight: 600;
+              .moeda {
+                position: absolute;
+                left: 66px;
+                top: 35px;
+              }
+              p {
+                font-size: 50px;
+                span {
+                  font-size: 26px;
+                }
+              }
+            }
+          }
+        }
+      }
+  

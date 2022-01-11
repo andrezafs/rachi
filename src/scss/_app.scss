@@ -1,0 +1,24 @@
+.app {
+    padding: 117px 0;
+    @include flexbox();
+    justify-content: center;
+    &-description {
+      width: 60%;
+      h1 {
+        font-size: 32px;
+        font-family: "Sora";
+        font-weight: 600;
+      }
+      p {
+        padding: 24px 0;
+        font-size: 16px;
+        font-family: "Inter";
+        font-weight: 400;
+      }
+
+      &-dlw {
+        padding: 10px 0;
+        display: flex;
+      }
+    }
+  }

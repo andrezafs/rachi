@@ -1,0 +1,32 @@
+.functionalities {
+    text-align: center;
+    padding: 56px 0;
+    h1 {
+      font-size: 40px;
+      font-family: "Sora";
+      font-weight: 600;
+    }
+    &-box {
+      @include flexbox();
+      justify-content: space-around;
+      padding: 53px 0;
+      margin-top: 30px;
+      &-card {
+        width: 257px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+          font-family: "Sora";
+          font-weight: 600;
+          font-size: 18px;
+          padding: 16px;
+        }
+        p {
+          font-size: 16px;
+          font-family: "Inter";
+          font-weight: 400;
+        }
+      }
+    }
+  }

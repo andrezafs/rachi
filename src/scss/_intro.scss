@@ -1,0 +1,16 @@
+.intro-container {
+    @include flexbox();
+    height: 90vh;
+    &-text {
+      h1 {
+        font-size: 48px;
+        font-family: "Sora", sans-serif;
+      }
+
+      button {
+        padding: 16px 36px;
+        margin-top: 50px;
+        @include button();
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+@import "reset";
+.maxw {
+  @include maxw();
+}
+
+.bg-ligth {
+  background-color: $white;
+}
+.bg-dark {
+  background-color: $white400;
+}
+
+nav {
+  height: 10vh;
+  @include flexbox();
+
+  ul {
+    display: flex;
+    li {
+      margin: 0 33px;
+    }
+  }
+}
