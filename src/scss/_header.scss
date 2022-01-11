@@ -13,7 +13,8 @@
 nav {
   height: 10vh;
   @include flexbox();
-
+  font: 500 18px 'Inter';
+  color: $grey;
   ul {
     display: flex;
     li {

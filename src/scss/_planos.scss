@@ -19,14 +19,10 @@
           padding: 80px 0;
           @include flexbox();
           h1 {
-            font-size: 24px;
-            font-family: "Sora";
-            font-weight: 600;
+            font: 600 24px 'Sora';
           }
           p {
-            font-size: 18px;
-            font-family: "Inter";
-            font-weight: 400;
+            font: normal 18px 'Sora'; 
           }
   
           button {
@@ -44,8 +40,8 @@
             }
             .valor {
               position: relative;
-              font-family: "Sora";
-              font-weight: 600;
+              font-family: "Inter";
+              font-weight: bold;
               .moeda {
                 position: absolute;
                 left: 66px;

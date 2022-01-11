@@ -7,13 +7,10 @@
           margin: 83px 0 45px 0;
         }
         h1 {
-          font-family: "Sora";
-          font-weight: 600;
-          font-size: 40px;
+          font: 600 40px 'Sora';
         }
         p {
-          font-family: "Roboto";
-          font-size: 18px;
+          font: 400 18px 'Inter';
           padding: 16px 0;
         }
         .btn-contact {
@@ -30,9 +27,7 @@
           border-bottom: 1px solid $white;
           margin-right: 40px;
           &::placeholder {
-            font-family: "Inter";
-            font-weight: 500;
-            font-size: 18px;
+            font: 500 18px 'Inter';
           }
         }
       }
