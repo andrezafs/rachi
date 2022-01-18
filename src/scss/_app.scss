@@ -2,6 +2,9 @@
   padding: 117px 0;
   @include flexbox();
   justify-content: center;
+  @media screen and (max-width:900px){
+    padding: 20px;
+  }
   &-description {
     width: 60%;
     h1 {
@@ -15,6 +18,7 @@
     &-dlw {
       padding: 10px 0;
       display: flex;
+      flex-wrap: wrap;
     }
   }
 }

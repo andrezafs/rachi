@@ -12,6 +12,7 @@
 
 nav {
   height: 10vh;
+  flex-wrap: wrap;
   @include flexbox();
   font: 500 18px 'Inter';
   color: $grey;
