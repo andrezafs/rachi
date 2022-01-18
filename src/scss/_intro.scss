@@ -1,10 +1,20 @@
 .intro-container {
     @include flexbox();
     height: 90vh;
+    @media screen and (max-width:768px) {
+      height: 100vh;
+      padding: 0 30px ;
+      img {
+        width: 100%;
+      }
+    }
     &-text {
       h1 {
         font: 600 48px 'Sora';
         color: $grey200;
+        @media screen and (max-width:900px) {
+          font-size: 32px;
+        }
       }
 
       button {

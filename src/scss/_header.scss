@@ -14,10 +14,13 @@ nav {
   height: 10vh;
   flex-wrap: wrap;
   @include flexbox();
+  justify-content: center;
   font: 500 18px 'Inter';
   color: $grey;
   ul {
     display: flex;
+    flex-wrap: wrap;
+    
     li {
       margin: 0 33px;
     }
