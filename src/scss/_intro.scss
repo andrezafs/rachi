@@ -1,26 +1,26 @@
 .intro-container {
-    @include flexbox();
-    height: 90vh;
-    @media screen and (max-width:768px) {
-      height: 100vh;
-      padding: 0 30px ;
-      img {
-        width: 100%;
+  @include flexbox();
+  flex-wrap: wrap;
+  @media screen and (max-width: 425px) {
+    &-bg {
+      display: none;
+    }
+
+    padding: 110px 30px;
+  }
+  &-text {
+    h1 {
+      font: 600 48px "Sora";
+      color: $grey200;
+      @media screen and (max-width: 900px) {
+        font-size: 32px;
       }
     }
-    &-text {
-      h1 {
-        font: 600 48px 'Sora';
-        color: $grey200;
-        @media screen and (max-width:900px) {
-          font-size: 32px;
-        }
-      }
 
-      button {
-        padding: 16px 36px;
-        margin-top: 50px;
-        @include button();
-      }
+    button {
+      padding: 16px 36px;
+      margin-top: 50px;
+      @include button();
     }
   }
+}
