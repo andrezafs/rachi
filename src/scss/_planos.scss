@@ -52,18 +52,27 @@
               color: $white;
             }
             .valor {
-              position: relative;
+             
               font-family: "Inter";
               font-weight: bold;
               .moeda {
                 position: absolute;
-                left: 66px;
                 top: 35px;
-                @media screen and (max-width:768px){
-                  
+                @media screen and (max-width:375px){
+                  left: 0px;
+           
+                 }
+                 @media screen and (max-width:425px){
+                  left: 20px;
+           
+                 }
+                 @media screen and (max-width:7685px){
+                  left: 40px;
+           
                  }
               }
               p {
+                position: relative;
                 font-size: 50px;
                 span {
                   font-size: 26px;
