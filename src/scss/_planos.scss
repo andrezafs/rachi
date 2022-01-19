@@ -7,18 +7,27 @@
           font-size: 40px;
           font-family: "Sora";
           font-weight: 600;
+          @media screen and (max-width:768px){
+            font-size: 32px;
+           }
         }
         p {
           padding: 16px 0;
           font-size: 18px;
           font-family: "Inter";
           font-weight: 400;
+          @media screen and (max-width:768px){
+            font-size: 14px;
+           }
         }
   
         &-cards {
           padding: 80px 0;
           @include flexbox();
           justify-content: center;
+          @media screen and (max-width:768px){
+           padding: 0 20px ;
+          }
           h1 {
             font: 600 24px 'Sora';
           }
@@ -50,6 +59,9 @@
                 position: absolute;
                 left: 66px;
                 top: 35px;
+                @media screen and (max-width:768px){
+                  
+                 }
               }
               p {
                 font-size: 50px;
