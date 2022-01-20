@@ -1,9 +1,16 @@
 .app {
-  padding: 117px 0;
+  padding: 117px 40px;
   @include flexbox();
-  justify-content: center;
+  
+  
   @media screen and (max-width:900px){
-    padding: 20px;
+    padding: 50px 20px;
+    justify-content: center;
+    text-align: center;
+    
+    img {
+      display: none;
+    }
   }
   &-description {
     width: 60%;

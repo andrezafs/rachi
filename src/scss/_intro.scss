@@ -1,6 +1,6 @@
 .intro-container {
   @include flexbox();
-  flex-wrap: wrap;
+ 
   @media screen and (max-width: 425px) {
     &-bg {
       display: none;
