@@ -3,16 +3,20 @@
   padding: 0 80px;
   @media screen and (max-width: 750px) {
     padding: 0 40px;
-  
+
     &-bg {
       display: none;
+      
+      
     }
 
     padding: 110px 30px;
   }
   &-text {
     @media screen and (max-width: 750px) {
+    
      text-align: center;
+     width: 100%;
     }
     h1 {
       font: 600 48px "Sora";

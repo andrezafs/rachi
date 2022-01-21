@@ -3,6 +3,9 @@
     padding: 56px 0;
     h1 {
       font: 600 40px 'Sora';
+      @media screen and (max-width:900px) {
+        font-size: 32px;
+      }
     }
     &-box {
       @include flexbox();
