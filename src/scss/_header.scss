@@ -3,26 +3,77 @@
   @include maxw();
 }
 
-.bg-ligth {
-  background-color: $white;
-}
-.bg-dark {
-  background-color: $white400;
+nav {
+  background-color: red;
+  height: 80px;
+  width: 100%;
+
+  ul {
+    float: right;
+    margin-right: 20px;
+    @media (max-width: 858px){
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #1d075f;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s
+    }
+  }
+
+  li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    @media (max-width: 858px){
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+
+    a {
+      color: white;
+      font-size: 17px;
+     padding: 7px 12px;
+     @media (max-width: 858px){
+      font-size: 20px;
+    }
+     @media (max-width: 952px){
+      font-size: 16px;
+     }
+    
+
+     .active, &:hover {
+       background-color: blue;
+       transition: .5s;
+       @media (max-width: 858px){
+        background: none;
+        color: #5434af;
+      }
+     }
+    }
+  }
 }
 
-nav {
-  height: 10vh;
-  flex-wrap: wrap;
-  @include flexbox();
-  justify-content: center;
-  font: 500 18px 'Inter';
-  color: $grey;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    
-    li {
-      margin: 0 33px;
-    }
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  @media (max-width: 858px){
+    display: block;
+  }
+}
+#check {
+	display: none;
+  @media (max-width: 858px){
+  &:checked~ul {
+    left: 0;
+  }
   }
 }
