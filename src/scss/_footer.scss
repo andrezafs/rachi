@@ -4,5 +4,9 @@
     color: $grey200;
     padding: 37px 0;
     font: normal 20px 'Sora';
+    @media (max-width: 952px){
+      font-size: 16px;
+     }
+    
   }
   
