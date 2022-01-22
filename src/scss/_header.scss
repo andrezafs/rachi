@@ -2,20 +2,34 @@
 .maxw {
   @include maxw();
 }
-
+.bg-ligth {
+  background-color: $white;
+}
+.bg-dark {
+  background-color: $white400;
+}
+i {
+  color: $principal;
+  
+}
 nav {
-  background-color: red;
   height: 80px;
   width: 100%;
-
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 0 70px;
+  @media (max-width: 858px){
+    padding: 0 10px;
+  }
   ul {
-    float: right;
+    // float: right;
     margin-right: 20px;
     @media (max-width: 858px){
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #1d075f;
+      background: $white400;
       top: 80px;
       left: -100%;
       text-align: center;
@@ -34,8 +48,8 @@ nav {
     }
 
     a {
-      color: white;
-      font-size: 17px;
+      color: $grey200;
+      font: 'Inter' 17px 500;
      padding: 7px 12px;
      @media (max-width: 858px){
       font-size: 20px;
@@ -46,11 +60,11 @@ nav {
     
 
      .active, &:hover {
-       background-color: blue;
+       background-color: $white400;
        transition: .5s;
        @media (max-width: 858px){
         background: none;
-        color: #5434af;
+        color: $grey200;
       }
      }
     }
@@ -62,7 +76,7 @@ nav {
 	color: white;
 	float: right;
 	line-height: 80px;
-	margin-right: 40px;
+
 	cursor: pointer;
 	display: none;
   @media (max-width: 858px){
